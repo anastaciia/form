@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+</head>
+<body>
+    <h1>Анкета непрерывного образования взрослых</h1>
+		Здравствуйте, потратьте,<br>пожалуйста, несколько минут своего времени на заполнение следующей анкеты.
+		<br>
+		<form action=""https://formspree.io/wanderingknight@пmail.com"" method="POST">
+			<fieldset>
+				Где Вы, чаще всего, занимаетесь/учитесь?<br>
+				<input type="checkbox" name="home">Дома<br>
+				<input type="checkbox" name="course">На курсах<br>
+					<label>
+						В другом месте  (уточните, пожалуйста):<br>
+						<textarea rows="3" cols="100" placeholder="Введите свой ответ"></textarea>
+					</label>
+				</fieldset>
+			<fieldset>
+				Вы посещаете курсы непрерывного образования?<br>
+				<input type="radio" name="course">Да
+				<input type="radio" name="course">Нет
+				<input type="radio" name="course">Время от времени<br>
+			</fieldset>
+			<fieldset>
+				Насколько Вы довольны курсом, оконченным в последнее время?<br>
+				<select>
+					<option value="">1/5</option>
+					<option value="">2/5</option>
+					<option value="">3/5</option>
+					<option value="">4/5</option>
+					<option value="">5/5</option>
+				</select>
+			</fieldset>
+			<fieldset>
+			Что привело Вас к непрерывному образованию?<br>
+				<input type="checkbox" name="development">Я хочу развиваться<br>
+				<input type="checkbox" name="work">Мне нужна лучшая работа<br>
+				<input type="checkbox" name="necessary">Я вынужден/а был/а<br>
+				<input type="checkbox" name="interesting">Меня это интересует<br>
+				<label>
+				Другой ответ (уточните, пожалуйста):<br>
+				<textarea rows="3" cols="100" placeholder="Введите свой ответ"></textarea>
+				</label>
+			</fieldset>
+			<fieldset>
+				Куда Вы ходите на курсы?<br>
+				<input type="checkbox" name="library">Библиотека<br>
+				<input type="checkbox" name="center">Учебный центр<br>
+				<input type="checkbox" name="work">Работа<br>
+				<input type="checkbox" name="internet">Интернет<br>
+				<input type="checkbox" name="university">Университет<br>
+					<label>
+						На другое место (уточните, пожалуйста):<br>
+						<textarea rows="3" cols="100" placeholder="Введите свой ответ"></textarea>
+					</label>
+			</fieldset>
+			<fieldset>
+				Какими носителями информации Вы во время учебы пользуетесь?<br>
+				<input type="checkbox" name="book">Книги<br>
+				<input type="checkbox" name="text">Онлайн тексты<br>
+				<input type="checkbox" name="video">Видео<br>
+				<input type="checkbox" name="audio">Подкасты (только аудиодорожки)<br>
+					<label>
+						Другие (уточните, пожалуйста):<br>
+						<textarea rows="3" cols="100" placeholder="Введите свой ответ"></textarea>
+					</label>
+			</fieldset>
+			<fieldset>
+				Какой сфере обучения Вы, чаще всего, уделяете внимание?<br>
+				<input type="radio" name="Attention">Языки<br>
+				<input type="radio" name="Attention">Информационная грамотность<br>
+				<input type="radio" name="Attention">Биология<br>
+				<input type="radio" name="Attention">Ботаника<br>
+					<label>
+						Другой ответ (уточните, пожалуйста):<br>
+						<textarea rows="3" cols="100" placeholder="Введите свой ответ"></textarea>
+					</label>
+			</fieldset>
+			<fieldset>
+				Как далеко Вы ездите на учебу?<br>
+				<input type="radio" name="driving">Я никуда не езжу<br>
+				<input type="radio" name="driving">1 - 20 км<br>
+				<input type="radio" name="driving">21 - 50 км<br>
+				<input type="radio" name="driving">Более 50 км<br>
+			</fieldset>
+			<fieldset  name="personalia">
+				Какую сумму в год Вы заплатите за курсы непрерывного образования?<br>
+				<input type="radio" name="price">до 500 грн<br>
+				<input type="radio" name="price">от 500 грн до 1000 грн<br>
+				<input type="radio" name="price">от 1000 грн до 1500 грн<br>
+				<input type="radio" name="price">от 1500 грн до 2000 грн<br>
+				<input type="radio" name="price">от 2000 грн до 5000 грн<br>
+			</fieldset>
+			<button type="button" onclick="form.personalia.style.backgroundColor='yellow'">изменить цвет текста</button>
+			<fieldset>
+				<legend>Вашы персональные даные:</legend>
+				Укажите Ваш пол:<br>
+				<input type="radio" name="sex">Мужчина<br>
+				<input type="radio" name="sex">Женщина<br>
+					<label>
+						Сколько Вам лет?
+						<input type="text" name="age" size="20" placeholder="Введите число" required ><br>
+					</label>
+				
+					<label>
+							Укажите Ваше имя:
+							<input type="text" name="name" size="40" required><br>
+					</label>
+					<label>
+						Укажите Вашу фамилию:
+						<input type="text" name="surename" size="40"required><br>
+					</label>
+					<label>
+						Укажите Вашу дату рождения:
+						<input type="date" name="bday"><br>
+					</label>
+					<label>
+						Укажите Ваш Email адрес:
+						<input type="email" name="client-email" size="30"required><br>
+					</label>
+				Дата заполнения анкеты:<br>
+				<input type="month" name="date">
+				
+				<br>
+				<br>
+				<input type="submit"><br>
+				<input type="reset"><br>
+			</fieldset>
+</body>
+</html>
